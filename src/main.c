@@ -88,7 +88,7 @@ void	welcome_message(void) //print welcome message
 	int start_col;
 	int current_col;
 	int i;
-	char str[] = "~ Hello there! This is the game 2048, implemented by Phillip and Lima in a Rush weekend.\n\nFun fact:\n\nDid you know the Game was created by Gabriele Cirulli one weekend as a clone of another game called 1024? ~";
+	char str[] = "~ Hello there! This is the game 2048, implemented by Philipp and Lima in a Rush weekend.\n\nFun fact:\n\nDid you know the Game was created by Gabriele Cirulli one weekend as a clone of another game called 1024? ~";
 
 	i = 0;
 	row = (LINES / 2) - 10; //use macro of ncurses to get dimensions, center
@@ -162,7 +162,7 @@ void	get_username(t_matrix *m)
 
 void tui(t_matrix *m)
 {
-	//welcome_message();
+	welcome_message();
 	get_username(m);
 	//menu(m);
 	game_controls(m);

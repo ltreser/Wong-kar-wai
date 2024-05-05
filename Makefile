@@ -37,7 +37,7 @@ LIBFT = libft/libft.a
 all: $(NAME)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -I$(INC_DIR) -I/usr/include -O3 -c  $< -o $@
+	$(CC) $(CFLAGS) -I$(INC_DIR) -I/usr/include -c  $< -o $@
 
 $(LIBFT):
 	make -C ./libft
